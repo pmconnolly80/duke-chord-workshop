@@ -8,21 +8,27 @@
     margin: 0.5rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 780px) {
     .serf {
-        flex-basis: 90%; /* Almost full width for small screens */
+        flex-basis: 45%; /* Two cards per row */
     }
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 781px) and (max-width: 900px) {
     .serf {
-        flex-basis: 45%; /* Two cards per row for medium screens */
+        flex-basis: 45%; /* Two cards per row */
     }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 901px) and (max-width: 1380px) {
     .serf {
-        flex-basis: 30%; /* Three cards per row for large screens */
+        flex-basis: 30%; /* Three cards per row */
+    }
+}
+
+@media (min-width: 1381px) {
+    .serf {
+        flex-basis: 22%; /* Four cards per row */
     }
 }
 
@@ -45,15 +51,27 @@
     color: #999;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 780px) {
     .serf__email {
-        font-size: 14px; /* Smaller font size for small screens */
+        font-size: 0.9rem;
     }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 781px) and (max-width: 900px) {
     .serf__email {
-        font-size: 18px; /* Default font size for larger screens */
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 901px) and (max-width: 1380px) {
+    .serf__email {
+        font-size: 1.25rem;
+    }
+}
+
+@media (min-width: 1381px) {
+    .serf__email {
+        font-size: 1.25rem;
     }
 }
 
